@@ -1,0 +1,259 @@
+.container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 400px;
+background-color: rgb(198, 143, 250);
+
+
+}
+
+.ficha-estudiante {
+    background-color: rgb(155, 68, 236);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "encabezado encabezado encabezado foto"
+      "enlaces enlaces enlaces foto"
+      "Actividades Actividades Actividades Actividades"
+      "filactividades filactividades filactividades filactividades"
+      "porcentajes porcentajes porcentajes porcentajes";
+      
+  }
+  
+  .encabezado {
+    background-color: rgb(198, 143, 250);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nombre-estudiante nombre-estudiante foto"
+      "enlaces enlaces foto";
+    grid-area: encabezado;
+    width: 900px;
+    
+  }
+  
+  .nombre-estudiante { 
+   grid-area: nombre-estudiante;
+   font-size: large;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 200;
+   text-align: center;
+   
+   }
+  
+  .foto { 
+    justify-self: center; 
+  align-self: center; 
+  grid-area: foto; 
+    
+    
+    }
+   
+  
+  .enlaces {
+    background-color: rgb(143, 241, 241);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "foto2 whatsapp whatsapp" 
+      "foto2 email email"
+      "foto2 github github"
+      "foto2 neocities neocities";
+    grid-area: enlaces;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+  }
+  
+  .foto2 { 
+    width: 50%;
+    grid-area: foto2;
+     }
+  
+  .whatsapp { 
+    grid-area: whatsapp;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+ }
+  
+  .email { 
+    grid-area: email; 
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
+  
+  .github { 
+    grid-area: github; 
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
+  
+  .neocities { 
+    grid-area: neocities; 
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
+  
+  .Actividades { 
+    background-color: rgb(238, 115, 176);
+    grid-area: Actividades;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    width: 900px;
+   }
+  
+  .filactividades {
+    background-color: rgb(250, 134, 250);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". estadoux estadodev"
+      "actividad1 porcen1 dev1"
+      "actividad2 porcen2 dev2"
+      "actividad3 porcen3 dev3";
+    grid-area: filactividades;
+    width: 900px;
+  
+  }
+  
+  .estadoux { 
+   grid-area: estadoux;
+   font-size: medium;
+   font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .estadodev { 
+   grid-area: estadodev;
+   font-size: medium;
+   font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .actividad1 { 
+    grid-area: actividad1;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .actividad2 { 
+    grid-area: actividad2;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .actividad3 { 
+    grid-area: actividad3;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .porcen1 { 
+    grid-area: porcen1;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .porcen2 { 
+    grid-area: porcen2;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .porcen3 { 
+    grid-area: porcen3;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+   }
+  
+   .dev1 { 
+    grid-area: dev1;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .dev2 { 
+    grid-area: dev2;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .dev3 { 
+    grid-area: dev3;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+   }
+  
+  .porcentajes {
+    background-color: rgb(101, 236, 101);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: porcentajes;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    width: 900px;
+
+  }
+  
+
+  
+  .html { 
+    grid-area: 1 / 2 / 4 / 3; 
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+  
+  .css { 
+    grid-area: 1 / 3 / 4 / 4;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    
+   }
+  
+  .js { 
+    grid-area: 1 / 4 / 4 / 5; 
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  .ui { 
+    grid-area: 1 / 5 / 4 / 6;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    
+   }
+  
+  .ux { 
+    grid-area: 1 / 6 / 4 / 7;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    
+   }
+  
+  
+  
+  
+    
